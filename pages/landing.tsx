@@ -14,6 +14,13 @@ import offer4 from "../assets/images/offer-4.png";
 export default function Landing({}) {
     const [toggle, setToggle] = useState(false);
 
+    function centerText(component) {
+        return (
+            <div className="self-center py-2">
+                {component}
+            </div>
+        );
+    }
 
     useEffect(() => {
         console.log("Component did mount");
@@ -38,7 +45,7 @@ export default function Landing({}) {
                     <div className="shrink-0">
                         <Image className="h-96 w-full object-cover md:h-full md:w-96"  alt="qolaq-learn" src={qolaqlearn}/>
                     </div>
-                    <div className="px-5"/>
+                    <div className="px-5 py-5"/>
                     <div className="flex flex-col">
                         <p className="text-5xl font-bold">QolaQ’s Decentralized Mutual Aid Platform</p>
                         <div className="py-2"/>
@@ -107,11 +114,81 @@ export default function Landing({}) {
             </div>
             {/* End of why-qolaq-section */}
 
-            <div className="w-full py-10 bg-blue-100">
-                <div className="md:container md:mx-auto md:flex flex-col items-center px-10 ">
+            <div className="py-5"/>
 
+            {/* blockchain section */}
+            <div className="w-full py-10 bg-blue-100">
+                <div className="md:container md:mx-auto md:flex flex-col md:items-center px-10 ">
+                    <div className="md:w-3/4 flex flex-col items-center">
+                        <p className="text-5xl text-center font-bold">... and blockchain-enabled QolaQ MAP is the best solution</p>
+                    </div>
+
+                    <div className="py-3"/>
+                    <div className="border-t-4 border-blue-200 w-full"/>                   
+                    <div className="py-3"/>
+                    
+                    <div>
+                        <div className="flex flex-row overflow-x-auto whitespace-nowrap space-x-5 py-5">
+                            <div className="flex flex-col items-center w-full ">
+                                <div className="h-24 w-full">
+                                </div>
+                                <div className="flex flex-column px-2 py-3 w-fit rounded-md text-sm">
+                                    <p>Security/Privacy</p>
+                                    <p>Inclusiveness</p>
+                                    <p>Claim Process</p>
+                                    <p>Risk Management</p>
+                                    <p>Payment</p>
+                                    <p>Affordabilty</p>
+                                    <p>Geography</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col items-center w-full">
+                                <div className="flex flex-col h-24 w-full justify-center">
+                                    <p className="lg:text-2xl whitespace-normal text-center font-bold">Web2 Mutual (Non-blockchain)</p>
+                                </div>  
+                                <div className="flex flex-column px-2 py-3  w-fit items-center text-center rounded-md bg-white text-sm">
+                                    <p>Less Format Contract</p>
+                                    <p>No Underwriting/Exclusions</p>
+                                    <p>Decentralized</p>
+                                    <p>Limited</p>
+                                    <p>Transparent/Limited Automation</p>
+                                    <p>Low`</p>
+                                    <p>Limited</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col items-center w-full">
+                                <div className="flex flex-col h-24 w-full justify-center">
+                                    <p className="lg:text-2xl whitespace-normal text-center font-bold">Qolaq</p>
+                                </div>
+                                <div className="flex flex-column px-2 py-3 w-fit items-center text-center rounded-md bg-white text-sm">
+                                    <p>Smart Contract</p>
+                                    <p>No Underwriting/Exclusions</p>
+                                    <p>Decentralized</p>
+                                    <p>Strong/Smart Contract</p>
+                                    <p>Transparent/Automated</p>
+                                    <p>Lowest Cost</p>
+                                    <p>Inclusive/Global</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col items-center w-full">
+                                <div className="flex flex-col h-24 w-full justify-center">
+                                    <p className="lg:text-2xl whitespace-normal text-center font-bold">Digital Insurance</p>
+                                </div>
+                                <div className="flex flex-column px-2 py-3 w-fit items-center text-center rounded-md bg-white text-sm">
+                                    <p>Standard Contract</p>
+                                    <p>Ridging Underwriting Strict Exclusions</p>
+                                    <p>Centralized/Unilateral</p>
+                                    <p>Rules and ops layers</p>
+                                    <p>No transparent</p>
+                                    <p>Less vs Conventional But Still Costly</p>
+                                    <p>Restricted/Highly Regulated</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {/* end of blockchain section */}
 
         </div>
     </div>
