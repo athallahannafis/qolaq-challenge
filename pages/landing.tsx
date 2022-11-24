@@ -46,7 +46,7 @@ export default function Landing({}) {
         <NavigationBar/>
         <div className="flex flex-col items-center">
             {/* Intro section */}
-            <div className="w-full py-10">
+            <div id="intro" className="w-full py-10">
                 <div className="lg:container lg:mx-auto lg:flex flex-row-reverse self-center justify-center items-center px-10 ">
                     <div className="shrink-0">
                         <Image className="h-96 w-full object-cover lg:h-full lg:w-96"  alt="qolaq-learn" src={qolaqlearn}/>
@@ -63,7 +63,7 @@ export default function Landing({}) {
 
 
             {/* why-qolaq-section */}
-            <div className="w-full py-36">
+            <div id="qolaq-section" className="w-full py-36">
                 <div className="lg:container lg:mx-auto lg:flex flex-col items-center px-10 ">
                     <p className="text-5xl text-center font-bold">Why Qolaq?</p>
                     <div className="py-5"/>
@@ -121,7 +121,7 @@ export default function Landing({}) {
 
 
             {/* blockchain section */}
-            <div className="w-full py-36 bg-slate-100">
+            <div id="blockchain-section" className="w-full py-36 bg-slate-100">
                 <div className="lg:container lg:mx-auto lg:flex flex-col lg:items-center px-10">
                     <div className="lg:w-3/4 flex flex-col items-center">
                         <p className="text-5xl text-center font-bold">... and blockchain-enabled QolaQ MAP is the best solution</p>
@@ -196,7 +196,7 @@ export default function Landing({}) {
 
 
             {/* Qolaq contract section */}
-            <div className="w-full py-36 bg-cyan-900">
+            <div id="qolaq-contract-section" className="w-full py-36 bg-cyan-900">
                 <div className="lg:container lg:mx-auto lg:flex flex-col lg:items-center px-10 space-y-10">
                     <div className="lg:w-3/4 flex flex-col text-white items-center">
                         <p className="text-5xl text-center font-bold">QolaQ Smart Contract MAP Program</p>
@@ -230,7 +230,7 @@ export default function Landing({}) {
             {/* End of qolaq contract section */}
 
             {/* How does it work section */}
-            <div className="w-full py-36">
+            <div id="how-section" className="w-full py-36">
                 <div className="lg:container lg:mx-auto lg:flex flex-col lg:items-center px-10 space-y-10">
                     <div className="lg:w-3/4 flex flex-col items-center">
                         <p className="text-5xl text-center font-bold">How does it work?</p>
