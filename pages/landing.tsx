@@ -34,8 +34,11 @@ export default function Landing({}) {
             
             {/* Intro section */}
             <div className="w-full py-10">
-                <div className="md:container md:mx-auto md:flex flex-row-reverse justify-center items-center px-10 ">
-                    <Image width={490} height={480}  alt="qolaq-learn" src={qolaqlearn}/>
+                <div className="md:container md:mx-auto md:flex flex-row-reverse self-center justify-center items-center px-10 ">
+                    <div className="shrink-0">
+                        <Image className="h-96 w-full object-cover md:h-full md:w-96"  alt="qolaq-learn" src={qolaqlearn}/>
+                    </div>
+                    <div className="px-5"/>
                     <div className="flex flex-col">
                         <p className="text-5xl font-bold">QolaQ’s Decentralized Mutual Aid Platform</p>
                         <div className="py-2"/>
@@ -103,6 +106,12 @@ export default function Landing({}) {
                 </div>
             </div>
             {/* End of why-qolaq-section */}
+
+            <div className="w-full py-10 bg-blue-100">
+                <div className="md:container md:mx-auto md:flex flex-col items-center px-10 ">
+
+                </div>
+            </div>
 
         </div>
     </div>
