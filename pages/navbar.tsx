@@ -8,7 +8,7 @@ export default function NavigationBar({}) {
     
     return (
         <div>
-           <Navbar expand="lg" bg="light" variant="light">
+           <Navbar fixed="top" expand="lg" bg="light" variant="light">
                 <Container>
                     <Navbar.Brand href="/">Qolaq</Navbar.Brand>
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
