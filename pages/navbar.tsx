@@ -14,9 +14,11 @@ export default function NavigationBar({}) {
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse>
                             <Nav className="me-auto">
-                                <Nav.Link href="#home">Home</Nav.Link>
-                                <Nav.Link href="/">Learn</Nav.Link>
-                                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                                <Nav.Link href="#intro">Learn</Nav.Link>
+                                <Nav.Link href="#qolaq-section">About</Nav.Link>
+                                <Nav.Link href="#blockchain-section">Blockchain</Nav.Link>
+                                <Nav.Link href="#qolaq-contract-section">Contract</Nav.Link>
+                                <Nav.Link href="#how-section">How it works</Nav.Link>
                             </Nav>
                             <Nav className="">
                                 <Nav.Link href="#home">Login</Nav.Link>
