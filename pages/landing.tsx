@@ -37,7 +37,7 @@ export default function Landing({}) {
     return (
     <div>
         <NavigationBar/>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center space-y-36">
             
             {/* Intro section */}
             <div className="w-full py-10">
@@ -55,7 +55,6 @@ export default function Landing({}) {
             </div>
             {/* End of intro section */}
 
-            <div className="py-5"/>
 
             {/* why-qolaq-section */}
             <div className="w-full py-10">
@@ -114,10 +113,9 @@ export default function Landing({}) {
             </div>
             {/* End of why-qolaq-section */}
 
-            <div className="py-5"/>
 
             {/* blockchain section */}
-            <div className="w-full py-10 bg-blue-100">
+            <div className="w-full py-10 bg-slate-100">
                 <div className="md:container md:mx-auto md:flex flex-col md:items-center px-10 ">
                     <div className="md:w-3/4 flex flex-col items-center">
                         <p className="text-5xl text-center font-bold">... and blockchain-enabled QolaQ MAP is the best solution</p>
@@ -189,6 +187,9 @@ export default function Landing({}) {
                 </div>
             </div>
             {/* end of blockchain section */}
+
+
+
 
         </div>
     </div>
